@@ -6,6 +6,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
 
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
@@ -19,6 +20,7 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
   <!--cdncss link-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="css/lightbox.min.css">
@@ -39,64 +41,12 @@
   </svg>
 
   <header id="top" class="position-sticky top-0 start-0" style="z-index:10;">
-    <nav class="navbar bg-white fixed-top">
+    <nav class="navbar fixed-top" id="navbar">
       <div class="container-fluid">
         <div class="d-flex align-items-center g-4">
           <a class="navbar-brand d-flex" href="index.html">
             <img src="images/logo.png" class="img-fluid" id="logo">
           </a>
-          <div class="icon px-5">
-            <a href="#" class="text-decoration-none">
-              <svg class="skype" width="24" height="24">
-                <use xlink:href="#skype"></use>
-              </svg>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <svg class="snapchat" width="24" height="24">
-                <use xlink:href="#snapchat"></use>
-              </svg>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <svg class="telegram" width="24" height="24">
-                <use xlink:href="#telegram"></use>
-              </svg>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <svg class="tumblr" width="24" height="24">
-                <use xlink:href="#tumblr"></use>
-              </svg>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <svg class="twitter" width="24" height="24">
-                <use xlink:href="#twitter"></use>
-              </svg>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <svg class="whatsapp" width="24" height="24">
-                <use xlink:href="#whatsapp"></use>
-              </svg>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <svg class="github" width="24" height="24">
-                <use xlink:href="#github"></use>
-              </svg>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <svg class="facebook" width="24" height="24">
-                <use xlink:href="#facebook"></use>
-              </svg>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <svg class="messenger" width="24" height="24">
-                <use xlink:href="#messenger"></use>
-              </svg>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <svg class="behance" width="24" height="24">
-                <use xlink:href="#behance"></use>
-              </svg>
-            </a>
-          </div>
         </div>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -150,164 +100,251 @@
         </div>
       </div>
     </nav>
+    <style>
+      .navbar {
+          background-color: black;
+          transition: background-color 1.5s;
+          height: 10vh;
+      }
+      .navbar.scrolled {
+          background-color: #CC4F22;
+      }
+      @media (min-width: 992px) { /* For larger screens */
+          .navbar {
+              height: 13vh;
+          }
+      @media (max-width: 768px) {
+        .navbar-brand {
+            flex-grow: 1;
+            
+        }
+        .icon {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        .navbar .icon svg {
+            margin-left: 10px;
+        }
+    }
+      }
+    </style>
   </header>
 
-    <section>
-      <div class="container">
-          <div class="banner rounded-4 p-5"
-              style="background-image: url(https://blankmediacollective.org/wp-content/uploads/2017/09/Digital-Agency.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
-              <div class="text-content text-white py-5 my-5">
-                  <p class="fs-4">
-                      Freelance Web Development Agency
-                  </p>
-                  <h1 class="display-1 text-black">
-                      Your Digital Partner
-                  </h1>
-              </div>
-              <div class="row text-uppercase bg-black rounded-4 p-3 mt-5">
-                  <div class="col-md-3">
-                      <div class="d-flex align-items-center gap-4">
-                          <h2 class="display-2 text-light">
-                              5+
-                          </h2>
-                          <p class="text-light-emphasis justify-content-center m-0 ls-4">
-                              Years of <br> industry experience
-                          </p>
-                      </div>
-                  </div>
-                  <div class="col-md-3">
-                      <div class="d-flex align-items-center gap-4">
-                          <h2 class="display-2 text-light">
-                              150+
-                          </h2>
-                          <p class="text-light-emphasis justify-content-center m-0 ls-4">
-                              satisfied <br> clients
-                          </p>
-                      </div>
-                  </div>
-                  <div class="col-md-3">
-                      <div class="d-flex align-items-center gap-4">
-                          <h2 class="display-2 text-light">
-                              30+
-                          </h2>
-                          <p class="text-light-emphasis justify-content-center m-0 ls-4">
-                              successful projects <br> delivered
-                          </p>
-                      </div>
-                  </div>
-                  <div class="col-md-3">
-                      <div class="d-flex align-items-center gap-4">
-                          <h2 class="display-2 text-light">
-                              100%
-                          </h2>
-                          <p class="text-light-emphasis justify-content-center m-0 ls-4">
-                              client <br> focused
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-
-
-  <section class="p-5 ">
+  <section>
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-3">
-          <div class="d-flex gap-4 align-items-start">
-            <div class="icon">
-              <svg class="text-primary monitor" width="50" height="50">
-                <use xlink:href="#monitor"></use>
-              </svg>
+        <div class="banner rounded-5 p-5" style="position: relative; overflow: hidden; min-height: 400px;">
+            <video autoplay muted loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+                <source src="videos/bgvideo1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="text-content text-white py-1 my-3">
+                <p class="fs-4 fw-bold" style="color:black">Freelance Web Development Agency</p>
+                <h1 class="display-5" style="color:rgb(204, 79, 33); text-shadow: 2px 2px 5px rgba(0,0,0,0.5);">
+                    Your Digital Partner
+                </h1>
             </div>
-            <div class="text-md-start" style="background-color: #ffebee; padding: 15px; border-radius: 5px;">
-              <h5>
-                  UI/UX Design
-              </h5>
-              <p class="postf">
-                  At in proin consequat ut cursus venenatis sapien.
-              </p>
-          </div>
-          
-          </div>
+            <div class="row text-uppercase bg-black rounded-4 p-3 mt-5">
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="d-flex align-items-center gap-4 flex-column flex-md-row">
+                        <h2 class="display-5 counter" data-target="2" style="color:rgb(204, 79, 33); text-shadow: 5px 5px 10px rgba(0,0,0,0.7);">
+                            0+
+                        </h2>
+                        <p class="text-light-emphasis justify-content-center m-0 ls-4">
+                            Years of <br> experience
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3 ">
+                    <div class="d-flex align-items-center gap-4 flex-column flex-md-row">
+                        <h2 class="display-5 counter" data-target="150" style="color:rgb(204, 79, 33); text-shadow: 5px 5px 10px rgba(0,0,0,0.7);">
+                            0+
+                        </h2>
+                        <p class="text-light-emphasis justify-content-center m-0 ls-4">
+                            satisfied <br> clients
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="d-flex align-items-center gap-4 flex-column flex-md-row">
+                        <h2 class="display-5 counter" data-target="30" style="color:rgb(204, 79, 33); text-shadow: 5px 5px 10px rgba(0,0,0,0.7);">
+                            0+
+                        </h2>
+                        <p class="text-light-emphasis justify-content-center m-0 ls-4">
+                            projects <br> delivered
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="d-flex align-items-center gap-4 flex-column flex-md-row">
+                        <h2 class="display-5 counter" data-target="100" style="color:rgb(204, 79, 33); text-shadow: 5px 5px 10px rgba(0,0,0,0.7);">
+                            0%
+                        </h2>
+                        <p class="text-light-emphasis justify-content-center m-0 ls-4">
+                            client <br> focused
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-3">
-          <div class="d-flex gap-4 align-items-start">
-            <div class="icon">
-              <svg class="text-primary notes" width="50" height="50">
-                <use xlink:href="#notes"></use>
-              </svg>
-            </div>
-            <div class="text-md-start" style="background-color: #ffebee; padding: 15px; border-radius: 5px;">
-              <h5>
-                Illustration
-              </h5>
-              <p class="postf">
-                At in proin consequat ut cursus venenatis sapien.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="d-flex gap-4 align-items-start">
-            <div class="icon">
-              <svg class="text-primary laptop" width="50" height="50">
-                <use xlink:href="#laptop"></use>
-              </svg>
-            </div>
-            <div class="text-md-start" style="background-color: #ffebee; padding: 15px; border-radius: 5px;">
-              <h5>
-                Graphic Design
-              </h5>
-              <p class="postf">
-                At in proin consequat ut cursus venenatis sapien.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+</section>
+
+<!-- Styles -->
+<style>
+    @media (max-width: 768px) {
+        .banner {
+            min-height: 300px; /* Decrease height for small screens */
+        }
+        .text-content {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+</style>
+
+<!-- Count-Up Animation Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const counters = document.querySelectorAll('.counter');
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target'); 
+                const current = +counter.innerText.replace(/[^0-9]/g, ''); 
+                const increment = target / 200; 
+                
+                if (current < target) {
+                    counter.innerText = `${Math.ceil(current + increment)}+`;
+                    setTimeout(updateCount, 10);
+                } else {
+                    counter.innerText = `${target}+`; 
+                }
+            };
+            updateCount();
+        });
+    });
+</script>
+
+
+
+<section class="p-5" id="services-section">
+    <div class="container">
+        <div class="row justify-content-center" style="margin-right: 50px;">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="d-flex gap-4 align-items-start">
+                    <div class="icon">
+                        <svg class="text-primary monitor" width="50" height="50">
+                            <use xlink:href="#monitor"></use>
+                        </svg>
+                    </div>
+                    <div class="text-md-start" style="background-color: #ffebee; padding: 20px; border-radius: 10px;">
+                        <h5>
+                            UI/UX Design
+                        </h5>
+                        <p class="postf">
+                            At in proin consequat ut cursus venenatis sapien.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="d-flex gap-4 align-items-start">
+                    <div class="icon">
+                        <svg class="text-primary notes" width="50" height="50">
+                            <use xlink:href="#notes"></use>
+                        </svg>
+                    </div>
+                    <div class="text-md-start" style="background-color: #ffebee; padding: 20px; border-radius: 10px;">
+                        <h5>
+                            Illustration
+                        </h5>
+                        <p class="postf">
+                            At in proin consequat ut cursus venenatis sapien.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="d-flex gap-4 align-items-start">
+                    <div class="icon">
+                        <svg class="text-primary laptop" width="50" height="50">
+                            <use xlink:href="#laptop"></use>
+                        </svg>
+                    </div>
+                    <div class="text-md-start" style="background-color: #ffebee; padding: 20px; border-radius: 10px;">
+                        <h5>
+                            Graphic Design
+                        </h5>
+                        <p class="postf">
+                            At in proin consequat ut cursus venenatis sapien.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <style>
+        @media (max-width: 768px) {
+            #services-section {
+                display: none; /* Hide the section on smaller screens */
+            }
+        }
+    </style>
   </section>
+  
 
  
-
   <section class="py-5">
-    <div class="container">
-      <div class="rounded-4 p-5"
-        style="background-image: url(https://img.freepik.com/free-photo/map-lying-wooden-table_53876-105723.jpg); background-size: cover ; background-repeat: no-repeat; background-position: center;">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="h-100 bg-black text-white p-4 rounded-4">
-              <h3>
-                Our Services
-              </h3>
-              <div class="py-4">
-                <p class="text-light-emphasis">
-                  Web Development 
-                </p>
-                <h5>
-                  Creating stunning and responsive websites
-                </h5>
-                <p class="text-light-emphasis">
-                  Tailored to your business needs
-                </p>
-              </div>
-              <p class="text-light-emphasis">
-                Digital Marketing
-              </p>
-              <h5>
-                Boost your online presence
-              </h5>
-              <p class="text-light-emphasis">
-                SEO, SEM, and Social Media Marketing
-              </p>
+    <div class="container" data-aos="zoom-out-up" data-aos-duration="1000">
+        <div class="rounded-4 p-5"
+            style="background-image: url(https://img.freepik.com/free-photo/map-lying-wooden-table_53876-105723.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="h-100 bg-black text-white p-4 rounded-4 shadow-lg" style="opacity: 0.9;">
+                        <h3 class="text-center" data-aos="fade-down" data-aos-duration="800">
+                            Our Services
+                        </h3>
+                        <div class="py-4">
+                            <p class="text-light-emphasis" data-aos="fade-left" data-aos-delay="200">
+                                Web Development
+                            </p>
+                            <h5 data-aos="fade-left" data-aos-delay="300">
+                                Creating stunning and responsive websites
+                            </h5>
+                            <p class="text-light-emphasis" data-aos="fade-left" data-aos-delay="400">
+                                Tailored to your business needs
+                            </p>
+                        </div>
+                        <p class="text-light-emphasis" data-aos="fade-right" data-aos-delay="500">
+                            Digital Marketing
+                        </p>
+                        <h5 data-aos="fade-right" data-aos-delay="600">
+                            Boost your online presence
+                        </h5>
+                        <p class="text-light-emphasis" data-aos="fade-right" data-aos-delay="700">
+                            SEO, SEM, and Social Media Marketing
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
+
+<!-- Link to AOS Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    // Initialize AOS
+    AOS.init({
+        offset: 120, // Offset from the top of the screen
+        duration: 1000, // Animation duration in ms
+        easing: 'ease-in-out', // Animation easing
+        once: true, // Animation triggers only once
+    });
+</script>
+
 
   <section class="portfolio py-5">
     <div class="container">
@@ -322,340 +359,472 @@
                 </div>
 
                 <div id="filters" class="button-group d-flex flex-wrap gap-3 justify-content-center py-5" data-aos="fade-up">
-                    <a href="#" class="btn btn-primary text-decoration-none text-uppercase is-checked" data-filter=".webdesign">Web Design</a>
-                    <a href="#" class="btn btn-primary text-decoration-none text-uppercase" data-filter=".uiux">Modern Landing Pages</a>
-                    <a href="#" class="btn btn-primary text-decoration-none text-uppercase" data-filter=".ecommerce">UI Focused Websites</a>
-                    <a href="#" class="btn btn-primary text-decoration-none text-uppercase" data-filter=".branding">Full Stack Applications</a>
-                </div>
+                  <a href="#" class="btn btn-primary text-decoration-none text-uppercase is-checked" style="background-color: #CC4F22;" data-filter=".webdesign">Web Design</a>
+                  <a href="#" class="btn btn-primary text-decoration-none text-uppercase" style="background-color: #CC4F22;" data-filter=".uiux">Modern Landing Pages</a>
+                  <a href="#" class="btn btn-primary text-decoration-none text-uppercase" style="background-color: #CC4F22;" data-filter=".ecommerce">UI Focused Websites</a>
+                  <a href="#" class="btn btn-primary text-decoration-none text-uppercase" style="background-color: #CC4F22;" data-filter=".branding">Full Stack Applications</a>
+              </div>
+              
+              <style>
+                  @media (max-width: 768px) {
+                      #filters {
+                          display: grid;
+                          grid-template-columns: repeat(2, 1fr); /* Two columns */
+                          gap: 1rem;
+                      }
+                      #filters a {
+                          width: 100%; /* Full width for buttons */
+                          text-align: center; /* Center align text */
+                      }
+                  }
+              </style>
+              
             </div>
 
             <div class="grid p-0 clearfix row row-cols-2 row-cols-lg-3 row-cols-xl-4" data-aos="fade-up">
                 <!-- Web Design -->
-                
                 <div class="col mb-4 portfolio-item webdesign">
-                  <a href="https://place.dog/300/200" data-lightbox="dog1" data-title="Dog 1" title="Dog 1">
-                      <img src="https://themefisher.com/blog-thumb/free-responsive-website-templates-html5-css3.webp" 
-                           class="img-fluid rounded-4 bento-effect" alt="Dog 1">
-                  </a>
-              </div>
-              <div class="col mb-4 portfolio-item webdesign">
-                <a href="https://place.dog/300/200" data-lightbox="dog1" data-title="Dog 1" title="Dog 1">
-                    <img src="https://themefisher.com/blog-thumb/free-responsive-website-templates-html5-css3.webp" 
-                         class="img-fluid rounded-4 bento-effect" alt="Dog 1">
-                </a>
-            </div>
-            <div class="col mb-4 portfolio-item webdesign">
-              <a href="https://place.dog/300/200" data-lightbox="dog1" data-title="Dog 1" title="Dog 1">
                   <img src="https://themefisher.com/blog-thumb/free-responsive-website-templates-html5-css3.webp" 
-                       class="img-fluid rounded-4 bento-effect" alt="Dog 1">
-              </a>
-          </div>
+                       class="img-fluid rounded-4 bento-effect image-item" 
+                       alt="Dog 1" data-description="This is a description for Dog 1." />
+                </div>
+              
                 <!-- UI/UX -->
                 <div class="col mb-4 portfolio-item uiux">
-                    <a href="https://place.dog/301/201" data-lightbox="dog2" data-title="Dog 2" title="Dog 2">
-                        <img src="https://bootstrapmade.com/content/templatefiles/iLanding/iLanding-bootstrap-website-template.webp"
-                             class="img-fluid rounded-4 bento-effect" alt="Dog 2">
-                    </a>
+                  <img src="https://bootstrapmade.com/content/templatefiles/iLanding/iLanding-bootstrap-website-template.webp"
+                       class="img-fluid rounded-4 bento-effect image-item" 
+                       alt="Dog 2" data-description="This is a description for Dog 2." />
                 </div>
-                <div class="col mb-4 portfolio-item uiux">
-                  <a href="https://place.dog/301/201" data-lightbox="dog2" data-title="Dog 2" title="Dog 2">
-                      <img src="https://bootstrapmade.com/content/templatefiles/iLanding/iLanding-bootstrap-website-template.webp"
-                           class="img-fluid rounded-4 bento-effect" alt="Dog 2">
-                  </a>
-              </div>
-              <div class="col mb-4 portfolio-item uiux">
-                <a href="https://place.dog/301/201" data-lightbox="dog2" data-title="Dog 2" title="Dog 2">
-                    <img src="https://bootstrapmade.com/content/templatefiles/iLanding/iLanding-bootstrap-website-template.webp"
-                         class="img-fluid rounded-4 bento-effect" alt="Dog 2">
-                </a>
-            </div>
+              
                 <!-- E-commerce -->
                 <div class="col mb-4 portfolio-item ecommerce">
-                    <a href="https://place.dog/302/202" data-lightbox="dog3" data-title="Dog 3" title="Dog 3">
-                        <img src="https://uizard.io/static/5d1216d70167670acc1a95dd51673c54/a8e47/d8733a4d375aeb660c14eb37464b551b6ef3059c-1440x835.png"
-                             class="img-fluid rounded-4 bento-effect" alt="Dog 3">
-                    </a>
-                </div>
-                <div class="col mb-4 portfolio-item ecommerce">
-                  <a href="https://place.dog/302/202" data-lightbox="dog3" data-title="Dog 3" title="Dog 3">
-                      <img src="https://uizard.io/static/5d1216d70167670acc1a95dd51673c54/a8e47/d8733a4d375aeb660c14eb37464b551b6ef3059c-1440x835.png"
-                           class="img-fluid rounded-4 bento-effect" alt="Dog 3">
-                  </a>
-              </div>
-              <div class="col mb-4 portfolio-item ecommerce">
-                <a href="https://place.dog/302/202" data-lightbox="dog3" data-title="Dog 3" title="Dog 3">
-                    <img src="https://uizard.io/static/5d1216d70167670acc1a95dd51673c54/a8e47/d8733a4d375aeb660c14eb37464b551b6ef3059c-1440x835.png"
-                         class="img-fluid rounded-4 bento-effect" alt="Dog 3">
-                </a>
-            </div>
-            <div class="col mb-4 portfolio-item ecommerce">
-              <a href="https://place.dog/302/202" data-lightbox="dog3" data-title="Dog 3" title="Dog 3">
                   <img src="https://uizard.io/static/5d1216d70167670acc1a95dd51673c54/a8e47/d8733a4d375aeb660c14eb37464b551b6ef3059c-1440x835.png"
-                       class="img-fluid rounded-4 bento-effect" alt="Dog 3">
-              </a>
-          </div>
+                       class="img-fluid rounded-4 bento-effect image-item" 
+                       alt="Dog 3" data-description="This is a description for Dog 3." />
+                </div>
+              
                 <!-- Branding -->
                 <div class="col mb-4 portfolio-item branding">
-                    <a href="https://place.dog/303/203" data-lightbox="dog4" data-title="Dog 4" title="Dog 4">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPV0S6QPMqXN7rCVsTPsQzKSWcb2mpBU6Z4Q&s"
-                             class="img-fluid rounded-4 bento-effect" alt="Dog 4">
-                    </a>
-                </div>
-                <div class="col mb-4 portfolio-item branding">
-                  <a href="https://place.dog/303/203" data-lightbox="dog4" data-title="Dog 4" title="Dog 4">
-                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPV0S6QPMqXN7rCVsTPsQzKSWcb2mpBU6Z4Q&s"
-                           class="img-fluid rounded-4 bento-effect" alt="Dog 4">
-                  </a>
-              </div>
-              <div class="col mb-4 portfolio-item branding">
-                <a href="https://place.dog/303/203" data-lightbox="dog4" data-title="Dog 4" title="Dog 4">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPV0S6QPMqXN7rCVsTPsQzKSWcb2mpBU6Z4Q&s"
-                         class="img-fluid rounded-4 bento-effect" alt="Dog 4">
-                </a>
-            </div>
-            <div class="col mb-4 portfolio-item branding">
-              <a href="https://place.dog/303/203" data-lightbox="dog4" data-title="Dog 4" title="Dog 4">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPV0S6QPMqXN7rCVsTPsQzKSWcb2mpBU6Z4Q&s"
-                       class="img-fluid rounded-4 bento-effect" alt="Dog 4">
-              </a>
-          </div>
-                <!-- Additional Images for Web Design -->
-                <div class="col mb-4 portfolio-item webdesign">
-                  <a href="https://place.dog/300/200" data-lightbox="dog1" data-title="Dog 1" title="Dog 1">
-                      <img src="https://themefisher.com/blog-thumb/free-responsive-website-templates-html5-css3.webp" 
-                           class="img-fluid rounded-4 bento-effect" alt="Dog 1">
-                  </a>
-              </div>
-                <!-- Additional Images for UI/UX -->
-                <div class="col mb-4 portfolio-item uiux">
-                    <a href="#" data-lightbox="dog6" data-title="Dog 6" title="Dog 6">
-                        <img src="https://bootstrapmade.com/content/templatefiles/iLanding/iLanding-bootstrap-website-template.webp"
-                             class="img-fluid rounded-4 bento-effect" alt="Dog 6">
-                    </a>
+                       class="img-fluid rounded-4 bento-effect image-item" 
+                       alt="Dog 4" data-description="This is a description for Dog 4." />
                 </div>
-                <!-- Additional Images for E-commerce -->
-                
-                <!-- Additional Images for Branding -->
-                
+              </div>
+              
+              <!-- Lightbox Modal -->
+              <div id="lightbox" class="lightbox hidden">
+                <div class="lightbox-content">
+                  <span class="lightbox-close">&times;</span>
+                  <img id="lightbox-image" src="" alt="" class="lightbox-image" />
+                  <p id="lightbox-description" class="lightbox-description"></p>
+                </div>
+              </div>
+              
+              <style>
+                .bento-effect {
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+              
+                .bento-effect:hover {
+                  transform: scale(1.05);
+                  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+                }
+              
+                .lightbox {
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background-color: rgba(0, 0, 0, 0.8);
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  z-index: 1000;
+                }
+              
+                .lightbox.hidden {
+                  display: none;
+                }
+              
+                .lightbox-content {
+                  position: relative;
+                  text-align: center;
+                  background: #fff;
+                  padding: 20px;
+                  border-radius: 8px;
+                }
+              
+                .lightbox-close {
+                  position: absolute;
+                  top: 10px;
+                  right: 10px;
+                  font-size: 24px;
+                  cursor: pointer;
+                }
+              
+                .lightbox-image {
+                  max-width: 100%;
+                  max-height: 20vh;
+                  border-radius: 8px;
+                }
+              
+                .lightbox-description {
+                  margin-top: 15px;
+                  font-size: 16px;
+                  color: #333;
+                }
+              </style>
+              
+              <script>
+                const images = document.querySelectorAll('.image-item');
+                const lightbox = document.getElementById('lightbox');
+                const lightboxImage = document.getElementById('lightbox-image');
+                const lightboxDescription = document.getElementById('lightbox-description');
+                const lightboxClose = document.querySelector('.lightbox-close');
+              
+                images.forEach(image => {
+                  image.addEventListener('click', () => {
+                    lightboxImage.src = image.src;
+                    lightboxDescription.textContent = image.dataset.description;
+                    lightbox.classList.remove('hidden');
+                  });
+                });
+              
+                lightboxClose.addEventListener('click', () => {
+                  lightbox.classList.add('hidden');
+                });
+              
+                lightbox.addEventListener('click', (e) => {
+                  if (e.target === lightbox) {
+                    lightbox.classList.add('hidden');
+                  }
+                });
+              </script>
+              
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center fw-bold" style="color: white; font-size: 3rem;">
+                <span style="color: white;">Our</span> <span style="color: #CC4F22;">Projects</span>
             </div>
-
-            
-
+            <div class="row justify-content-center" id="projects-container">
+                <!-- Card 1 -->
+                <div class="col-md-4 d-flex justify-content-center col-sm-6 mb-4">
+                    <div class="card h-100 text-white p-4 rounded-4" style="background-color: #111111;">
+                        <h4 class="fw-bold">Project 1</h4>
+                        <p class="text-light-emphasis">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="https://live-demo-link.com" class="link" style="color: #CC4F22; text-decoration: none;">Live Link</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 d-flex justify-content-center col-sm-6 mb-4">
+                    <div class="card h-100 text-white p-4 rounded-4" style="background-color: #111111;">
+                        <h4 class="fw-bold">Project 2</h4>
+                        <p class="text-light-emphasis">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="https://live-demo-link.com" class="link" style="color: #CC4F22; text-decoration: none;">Live Link</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 d-flex justify-content-center col-sm-6 mb-4">
+                    <div class="card h-100 text-white p-4 rounded-4" style="background-color: #111111;">
+                        <h4 class="fw-bold">Project 3</h4>
+                        <p class="text-light-emphasis">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        <a href="https://live-demo-link.com" class="link" style="color: #CC4F22; text-decoration: none;">Live Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button id="view-more" class="btn btn-primary">View More</button>
+                <button id="see-less" class="btn btn-secondary" style="display: none;">See Less</button>
+            </div>
         </div>
-
+    
+        <!-- CSS -->
         <style>
-            .bento-effect {
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            @media (max-width: 768px) {
+                .card {
+                    width: 100%; /* Ensure the card takes full width */
+                }
             }
-
-            .bento-effect:hover {
-                transform: scale(1.05);
-                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    
+            .card {
+                min-width: 250px; /* Set a minimum width to prevent shrinking */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better appearance */
             }
         </style>
     </section>
+    
+  
+  <script>
+      document.getElementById('view-more').addEventListener('click', function() {
+          const projectsContainer = document.getElementById('projects-container');
+          for (let i = 4; i <= 6; i++) {
+              const col = document.createElement('div');
+              col.className = 'col-md-4 mb-4 additional-project';
+              col.innerHTML = `
+                  <div class="card h-100  text-white p-4 rounded-4" style="background-color: #111111;">
+                      <h4 class="fw-bold">Project ${i}</h4>
+                      <p class="text-light-emphasis">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+              `;
+              projectsContainer.appendChild(col);
+          }
+          document.getElementById('view-more').style.display = 'none';
+          document.getElementById('see-less').style.display = 'inline-block';
+      });
+  
+      document.getElementById('see-less').addEventListener('click', function() {
+          const additionalProjects = document.querySelectorAll('.additional-project');
+          additionalProjects.forEach(project => project.remove());
+          document.getElementById('view-more').style.display = 'inline-block';
+          document.getElementById('see-less').style.display = 'none';
+      });
+  </script>
+  
+  <style>
+      .card {
+          background-color: #111111;
+      }
+      .btn-primary {
+          background-color: #CC4F22;
+          border: none;
+          padding: 10px 20px;
+          font-size: 1rem;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+      }
+      .btn-primary:hover {
+          background-color: #CC4F22;
+      }
+      .btn-secondary {
+          background-color: #CC4F22;
+          border: none;
+          padding: 10px 20px;
+          font-size: 1rem;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+      }
+      .btn-secondary:hover {
+          background-color: #111111;
+      }
+  </style>
     <section class="py-5">
-      <div class="text-black d-flex justify-content-center fw-bold mb-4" style="font-size: 2rem;">Pricing</div>
+      <div class=" d-flex justify-content-center fw-bold mb-4" style="font-size: 3rem; color: white;">Pricing</div>
       <div class="container">
           <div class="row">
-              <!-- Web Design Pricing -->
-              <div class="col-md-3 mb-4">
-                  <div class="h-100 bg-black text-white p-4 rounded-4">
-                      <h4 class="fw-bold">Web Design</h4>
-                      <p class="text-light-emphasis">Starting at $500</p>
-                      <p>Creating visually appealing and user-friendly websites tailored to your needs.</p>
-                      <button style="background-color: azure; color: black; border: 50%">Get</button>
-                  </div>
+            <div class="col-md-3 mb-4">
+              <div class="h-100 bg-[#111111] text-white p-4 rounded-4" style="height: 10vh; background: #111111; ">
+                  <h4 class="fw-bold">Web Design</h4>
+                  <p class="text-light-emphasis">Starting at $500</p>
+                  <p>Creating visually appealing and user-friendly websites tailored to your needs.</p>
+                  <button style="background-color: #CC4F22; color: white; border-radius: 50px; padding: 10px 20px; border: none;">
+                    Get
+                </button>
               </div>
-              <!-- Modern SaaS Pricing -->
-              <div class="col-md-3 mb-4">
-                  <div class="h-100 bg-black text-white p-4 rounded-4">
-                      <h4 class="fw-bold">Modern SaaS</h4>
-                      <p class="text-light-emphasis">Starting at $1000</p>
-                      <p>Developing scalable and efficient SaaS solutions for modern businesses.</p>
-                      <button style="background-color: azure; color: black; border: 50%">Get</button>
-                  </div>
+          </div>
+          <!-- Modern SaaS Pricing -->
+          <div class="col-md-3 mb-4">
+              <div class="h-100 bg-[#111111] text-white p-4 rounded-4" style="height: 10vh; background: #111111;">
+                  <h4 class="fw-bold">Modern SaaS</h4>
+                  <p class="text-light-emphasis">Starting at $1000</p>
+                  <p>Developing scalable and efficient SaaS solutions for modern businesses.</p>
+                  <button style="background-color: #CC4F22; color: white; border-radius: 50px; padding: 10px 20px; border: none;">
+                    Get
+                </button>
               </div>
-              <!-- Full Stack Pricing -->
-              <div class="col-md-3 mb-4">
-                  <div class="h-100 bg-black text-white p-4 rounded-4">
-                      <h4 class="fw-bold">Full Stack</h4>
-                      <p class="text-light-emphasis">Starting at $1500</p>
-                      <p>Comprehensive full stack development services for end-to-end solutions.</p>
-                      <button style="background-color: azure; color: black; border: 50%">Get</button>
-                  </div>
+          </div>
+          <!-- Full Stack Pricing -->
+          <div class="col-md-3 mb-4">
+              <div class="h-100 bg-[#111111] text-white p-4 rounded-4" style="height: 10vh; background: #111111; ">
+                  <h4 class="fw-bold">Full Stack</h4>
+                  <p class="text-light-emphasis">Starting at $1500</p>
+                  <p>Comprehensive full stack development services for end-to-end solutions.</p>
+                  <button style="background-color: #CC4F22; color: white; border-radius: 50px; padding: 10px 20px; border: none;">
+                    Get
+                </button>
               </div>
-              <!-- UI Based Pricing -->
-              <div class="col-md-3 mb-4">
-                  <div class="h-100 bg-black text-white p-4 rounded-4">
-                      <h4 class="fw-bold">UI Based</h4>
-                      <p class="text-light-emphasis">Starting at $800</p>
-                      <p>Focused on creating intuitive and engaging user interfaces for your applications.</p>
-                      <button style="background-color: azure; color: black; border: 50%">Get</button>
-                  </div>
+          </div>
+          <!-- UI Based Pricing -->
+          <div class="col-md-3 mb-4">
+              <div class="h-100 text-white p-4 rounded-4" style="height: 10vh; background: #111111; ">
+                  <h4 class="fw-bold">UI Based</h4>
+                  <p class="text-light-emphasis">Starting at $800</p>
+                  <p>Focused on creating intuitive and engaging user interfaces for your applications.</p>
+                  <button style="background-color: #CC4F22; color: white; border-radius: 50px; padding: 10px 20px; border: none;">
+                    Get
+                </button>
               </div>
+          </div>
           </div>
       </div>
   </section>
+  <section>
+    <div class="container">
+        <div class="text-center">
+            <h2 class="display-3 mb-5">
+                <span style="color: white;">Client</span> <span style="color: #CC4F22;">Testimonials</span>
+            </h2>
+        </div>
 
+        <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+                <div class="testimonial-card rounded-3 py-4 px-4 swiper-slide">
+                    <div class="text-start">
+                        <p>
+                            “The team provided exceptional web development services, transforming our ideas into a functional, user-friendly website.”
+                        </p>
+                        <h5>Sarah T.</h5>
+                        <p class="postd">8/20/2023</p>
+                    </div>
+                </div>
+                <div class="testimonial-card rounded-3 py-4 px-4 swiper-slide">
+                    <div class="text-start">
+                        <p>
+                            “Their expertise in digital marketing significantly boosted our online presence. Highly recommend their services!”
+                        </p>
+                        <h5>James L.</h5>
+                        <p class="postd">8/20/2023</p>
+                    </div>
+                </div>
+                <div class="testimonial-card rounded-3 py-4 px-4 swiper-slide">
+                    <div class="text-start">
+                        <p>
+                            “A fantastic agency to work with—responsive, professional, and creative in their approach to web design.”
+                        </p>
+                        <h5>Monica P.</h5>
+                        <p class="postd">8/20/2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="testimonial-swiper-pagination position-relative mt-5 text-center"></div>
+        </div>
+
+        <!-- Include Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            const swiper = new Swiper('.testimonial-swiper', {
+                slidesPerView: 1, // Change this value to show more than one slide
+                spaceBetween: 30, // Space between slides
+                pagination: {
+                    el: '.testimonial-swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    // When window width is >= 640px
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    // When window width is >= 768px
+                    768: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+        </script>
+    </div>
+</section>
+
+<style>
+    .swiper-slide {
+        display: flex; /* Ensure that slides are flexible */
+        justify-content: center; /* Center content */
+    }
+</style>
+
+  
   <section>
     <div class="container">
-      <div class="text-center">
-        <h2 class="display-3 mb-5">
-          Client Testimonials
-        </h2>
-      </div>
-  
-      <div class="swiper testimonial-swiper">
-        <div class="swiper-wrapper">
-          <div class="testimonial-card rounded-3 py-4 px-4 swiper-slide">
-            <div class="text-start">
-              <p>
-                “The team provided exceptional web development services, transforming our ideas into a functional, user-friendly website.”
-              </p>
-              <h5>
-                Sarah T.
-              </h5>
-              <p class="postd">
-                8/20/2023
-              </p>
-            </div>
-          </div>
-          <div class="testimonial-card rounded-3 py-4 px-4 swiper-slide">
-            <div class="text-start">
-              <p>
-                “Their expertise in digital marketing significantly boosted our online presence. Highly recommend their services!”
-              </p>
-              <h5>
-                James L.
-              </h5>
-              <p class="postd">
-                8/20/2023
-              </p>
-            </div>
-          </div>
-          <div class="testimonial-card rounded-3 py-4 px-4 swiper-slide">
-            <div class="text-start">
-              <p>
-                “A fantastic agency to work with—responsive, professional, and creative in their approach to web design.”
-              </p>
-              <h5>
-                Monica P.
-              </h5>
-              <p class="postd">
-                8/20/2023
-              </p>
-            </div>
-          </div>
+        <div class="text-center pt-5">
+            <h2 class="display-3">FAQs</h2>
         </div>
-        <div class="testimonial-swiper-pagination position-relative mt-5 text-center"></div>
-      </div>
+        <div class="row mt-5">
+            <div class="col-lg-6">
+                <img src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?cs=srgb&dl=pexels-cadomaestro-1170412.jpg&fm=jpg" class="img-fluid" alt="FAQ Image">
+            </div>
+            <div class="col-lg-6">
+                <div class="accordion accordion-flush" id="accordion-flush">
+                    <div class="accordion-item border mb-3 rounded-3">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                Do you offer custom web design services?
+                            </button>
+                        </h5>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion-flush">
+                            <div class="accordion-body">
+                                <p>Yes, we specialize in creating custom websites tailored to your brand, goals, and audience needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border mb-3 rounded-3">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                Can you assist with SEO and digital marketing?
+                            </button>
+                        </h5>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                            <div class="accordion-body">
+                                <p>Absolutely! Our team provides comprehensive SEO strategies and marketing plans to enhance your online visibility.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border mb-3 rounded-3">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                How long does it take to build a website?
+                            </button>
+                        </h5>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                            <div class="accordion-body">
+                                <p>The timeline varies depending on project complexity, but most sites are completed within 4-8 weeks.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border mb-3 rounded-3">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour">
+                                What platforms do you use for web development?
+                            </button>
+                        </h5>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                            <div class="accordion-body">
+                                <p>We work with various platforms including WordPress, Shopify, and custom solutions based on your requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border mb-3 rounded-3">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                aria-controls="collapseFive">
+                                Do you provide ongoing support after the website launch?
+                            </button>
+                        </h5>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                            <div class="accordion-body">
+                                <p>Yes, we offer maintenance and support packages to ensure your website runs smoothly post-launch.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
-  
-  <section>
-    <div class="container">
-      <div class="text-center pt-5">
-        <h2 class="display-3">
-          FAQs
-        </h2>
-      </div>
-      <div class="row mt-5">
-        <div class="col-lg-6">
-          <img src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?cs=srgb&dl=pexels-cadomaestro-1170412.jpg&fm=jpg" class="img-fluid">
-        </div>
-        <div class="col-lg-6">
-          <div class="accordion accordion-flush" id="accordion-flush">
-            <div class="accordion-item border mb-3 rounded-3">
-              <h5 class="accordion-header">
-                <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                  aria-controls="collapseOne">
-                  Do you offer custom web design services?
-                </button>
-              </h5>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion-flush">
-                <div class="accordion-body">
-                  <p>Yes, we specialize in creating custom websites tailored to your brand, goals, and audience needs.</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item border mb-3 rounded-3">
-              <h5 class="accordion-header">
-                <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                  aria-controls="collapseTwo">
-                  Can you assist with SEO and digital marketing?
-                </button>
-              </h5>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
-                <div class="accordion-body">
-                  <p>Absolutely! Our team provides comprehensive SEO strategies and marketing plans to enhance your online visibility.</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item border mb-3 rounded-3">
-              <h5 class="accordion-header">
-                <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                  aria-controls="collapseThree">
-                  How long does it take to build a website?
-                </button>
-              </h5>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
-                <div class="accordion-body">
-                  <p>The timeline varies depending on project complexity, but most sites are completed within 4-8 weeks.</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item border mb-3 rounded-3">
-              <h5 class="accordion-header">
-                <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                  aria-controls="collapseThree">
-                  How long does it take to build a website?
-                </button>
-              </h5>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
-                <div class="accordion-body">
-                  <p>The timeline varies depending on project complexity, but most sites are completed within 4-8 weeks.</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item border mb-3 rounded-3">
-              <h5 class="accordion-header">
-                <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                  aria-controls="collapseThree">
-                  How long does it take to build a website?
-                </button>
-              </h5>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
-                <div class="accordion-body">
-                  <p>The timeline varies depending on project complexity, but most sites are completed within 4-8 weeks.</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item border mb-3 rounded-3">
-              <h5 class="accordion-header">
-                <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                  aria-controls="collapseThree">
-                  How long does it take to build a website?
-                </button>
-              </h5>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
-                <div class="accordion-body">
-                  <p>The timeline varies depending on project complexity, but most sites are completed within 4-8 weeks.</p>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+</section> 
+
   
   <section class="py-5">
     <div class="container">
@@ -702,137 +871,125 @@
             </div>
           </div>
         </div>
-        <!-- Additional blog entries here -->
-      </div>
-      <div class="text-center">
-        <button type="button" class="btn btn-outline-dark btn-lg mt-3 btn-color text-uppercase">
-          View All Blogs
-        </button>
+        
       </div>
     </div>
   </section>
-  
+
   <section class="p-5 bg-yellow py-5">
     <div class="container">
-      <div class="row justify-content-center my-5">
-        <div class="col-md-5">
-          <h6>
-            Get in Touch
-          </h6>
-          <h2 class="display-3">
-            Contact Us
-          </h2>
-          <p>
-            Have a project in mind? Drop us a message, and let's discuss how we can help bring your ideas to life.
-          </p>
+        <div class="row justify-content-center my-5">
+            <div class="col-md-5 text-center">
+                <h6>Get in Touch</h6>
+                <h2 class="display-3 text-black">Contact Us</h2>
+                <p class="text-black">  
+                    Have a project in mind? Drop us a message, and let's discuss how we can help bring your ideas to life.
+                </p>
+            </div>
+            <div class="col-md-5 d-flex justify-content-around flex-wrap align-items-center flex-sm-nowrap">
+                <!-- Circular Cards for Contact Links -->
+                <div class="card rounded-circle text-center mb-3" style="width: 100px; height: 100px; border: none;">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
+                        <a href="mailto:contact@yourwebsite.com" class="text-decoration-none text-dark">
+                            <h5 class="mb-1" style="font-size: 0.9rem;">Email Us</h5>
+                            <p class="mb-0" style="font-size: 0.75rem;"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card rounded-circle text-center mb-3" style="width: 100px; height: 100px; border: none;">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
+                        <a href="tel:+1234567890" class="text-decoration-none text-dark">
+                            <h5 class="mb-1" style="font-size: 0.9rem;">Call Us</h5>
+                            <p class="mb-0" style="font-size: 0.75rem;">+1 234 567 890</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card rounded-circle text-center mb-3" style="width: 100px; height: 100px; border: none;">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <h5 class="mb-1" style="font-size: 0.9rem;">Follow Us</h5>
+                            <p class="mb-0" style="font-size: 0.75rem;">Social Media</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-5">
-          <div class="mb-3">
-            <input type="name" class="form-control p-3 rounded-4" name="name" id="name" aria-describedby="nameHelpId"
-              placeholder="Your Name" />
-          </div>
-          <div class="mb-3">
-            <input type="email" class="form-control p-3 rounded-4" name="email" id="email" aria-describedby="emailHelpId"
-              placeholder="Your Email" />
-          </div>
-          <div class="mb-3">
-            <textarea class="form-control p-3 rounded-4" name="message" placeholder="Your Message" id="message" rows="3"></textarea>
-          </div>
-          <div class="d-grid">
-            <button type="button" class="btn btn-dark btn-lg text-uppercase rounded-4">
-              Submit
-            </button>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+
+    <!-- CSS -->
+    <style>
+        @media (max-width: 768px) {
+            .container {
+                max-width: 90%; 
+            }
+            .display-3 {
+                font-size: 1.75rem; /* Adjust heading size for mobile */
+            }
+            .card {
+                margin-bottom: 1rem; /* Reduce margin between cards */
+            }
+            .col-md-5.d-flex {
+                justify-content: space-around; /* Align items side-by-side in a row */
+            }
+            .card {
+                width: 80px;
+                height: 80px; /* Reduce card size for smaller screens */
+            }
+            .card-body {
+                padding: 0.5rem; /* Adjust padding for smaller circles */
+            }
+        }
+
+        .card {
+            background-color: #f8f9fa; /* Light background for cards */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow effect */
+            transition: transform 0.3s ease;
+        }
+
+        .card-body {
+            padding: 1.5rem; /* Add padding to text inside circles */
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Scale effect on hover */
+        }
+    </style>
+</section>
+
+
   
   <footer id="footer" class="bg-black text-white py-5">
     <div class="container-sm">
-      <div class="row g-md-5 my-5">
-        <div class="col-md-4">
-          <div class="info-box">
-            <img src="images/logo-2.png" class="img-fluid">
-            <p class="py-4">
-              Subscribe to newsletter to get some updates related with branding, designs and more.
-            </p>
-            <div class="social-links">
-              <svg class="skype" width="24" height="24">
-                <use xlink:href="#skype"></use>
-              </svg>
-              <svg class="snapchat" width="24" height="24">
-                <use xlink:href="#snapchat"></use>
-              </svg>
-              <svg class="telegram" width="24" height="24">
-                <use xlink:href="#telegram"></use>
-              </svg>
-              <svg class="tumblr" width="24" height="24">
-                <use xlink:href="#tumblr"></use>
-              </svg>
-              <svg class="twitter" width="24" height="24">
-                <use xlink:href="#twitter"></use>
-              </svg>
-              <svg class="whatsapp" width="24" height="24">
-                <use xlink:href="#whatsapp"></use>
-              </svg>
-              <svg class="github" width="24" height="24">
-                <use xlink:href="#github"></use>
-              </svg>
-              <svg class="facebook" width="24" height="24">
-                <use xlink:href="#facebook"></use>
-              </svg>
-              <svg class="messenger" width="24" height="24">
-                <use xlink:href="#messenger"></use>
-              </svg>
-              <svg class="behance" width="24" height="24">
-                <use xlink:href="#behance"></use>
-              </svg>
+        <div class="row g-md-5 my-5">
+            <div class="col-md-4">
+                <div class="info-box">
+                    <img src="images/logo-2.png" class="img-fluid" alt="Agency Logo">
+                    <p class="py-4">
+                        At [Your Agency Name], we are dedicated to crafting innovative web solutions that elevate your brand and engage your audience.
+                    </p>
+                    
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="row">
-            <div class="col-6">
-              <ul class="list-unstyled">
-                <li>
-                  <a class="text-decoration-none text-white" href="index.html">Home</a>
-                </li>
-                <li>
-                  <a class="text-decoration-none text-white" href="#">About</a>
-                </li>
-                <li>
-                  <a class="text-decoration-none text-white" href="index.html">Team</a>
-                </li>
-                <li>
-                  <a class="text-decoration-none text-white" href="index.html">Portfolio</a>
-                </li>
-              </ul>
+
+            <div class="col-md-8">
+                <!-- Mission Statement -->
+                <h5>Our Mission</h5>
+                <p>We strive to deliver exceptional web development services that empower businesses to thrive in the digital landscape. Our team combines creativity with technical expertise to create websites that not only look great but also perform exceptionally.</p>
+
+                <!-- Call to Action -->
+                <h5>Let's Build Something Great Together!</h5>
+                <p>If you're looking for a partner to help you with your next project, get in touch with us today!</p>
+
+                <!-- Contact Information -->
+                <h3><a href="mailto:contact@yourwebsite.com" class="text-white text-decoration-none">harshit77dev@gmail.com</a></h3>
             </div>
-            <div class="col-6">
-              <h6>
-                <a class="text-decoration-none text-white" href="index.html">Blog</a>
-              </h6>
-              <h6>
-                <a class="text-decoration-none text-white" href="index.html">Contact</a>
-              </h6>
-            </div>
-          </div>
+
         </div>
-        <div class="col-md-5">
-          <p>
-            Just feel free to contact if you wanna collaborate with me, or simply have a conversation.
-          </p>
-          <h3>
-            <a href="mailto:contact@yourwebsite.com" class="text-white text-decoration-none">contact@yourwebsite.com</a>
-          </h3>
-        </div>
-      </div>
-      <div class="row">
-        <p>©2024 Jessica. Free HTML Template by <a href="https://templatesjungle.com/" class="text-white" target="_blank">TemplatesJungle</a>. Distributed By <a href="https://themewagon.com" class="text-white" target="blamk">ThemeWagon</a> </p>
-      </div>
+
     </div>
-  </footer>
+</footer>
+
+
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="js/jquery-1.11.0.min.js"></script> <!-- jquery file-->

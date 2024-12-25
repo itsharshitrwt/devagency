@@ -1,4 +1,16 @@
 /* fonts family */
+body {
+    background-color: black;
+    color: white; /* Optional: to ensure text is visible on a black background */
+}
+
+.navbar {
+    background-color: yellow;
+    transition: background-color 0.3s;
+}
+.navbar.scrolled {
+    background-color: orange;
+}
 
 :root {
     --body-font : "Work Sans", sans-serif;
