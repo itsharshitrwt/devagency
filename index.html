@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>DevAgency</title>
+  <title>Release</title>
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -18,6 +18,7 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
   <!--cdncss link-->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -44,9 +45,11 @@
     <nav class="navbar fixed-top" id="navbar">
       <div class="container-fluid">
         <div class="d-flex align-items-center g-4">
-          <a class="navbar-brand d-flex" href="index.html">
-            <img src="images/logo.png" class="img-fluid" id="logo">
-          </a>
+            <a class="navbar-brand d-flex" href="index.html" style="color: black; font-size: 4rem; font-weight: bold;">
+                <h1 class="display-5" style="font-family: 'Bebas Neue', sans-serif; font-size: 4rem; color:rgb(204, 79, 33); text-shadow: 2px 2px 5px rgba(0,0,0,0.5); letter-spacing: 2px; word-spacing: 5px;">
+                    Release
+                </h1> 
+            </a>
         </div>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -83,18 +86,7 @@
                 <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Styles 
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Blog 
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Team 
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Contact 
-                </a>
-              </li>
+              
             </ul>
           </div>
         </div>
@@ -132,19 +124,19 @@
   </header>
 
   <section>
-    <div class="container">
-        <div class="banner rounded-5 p-5" style="position: relative; overflow: hidden; min-height: 400px;">
+    <div class="container" style="margin-bottom: 20px;">
+        <div class="banner rounded-5 p-5 glowing-border" style="position: relative; overflow: hidden; min-height: 400px;">
             <video autoplay muted loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
                 <source src="videos/bgvideo1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="text-content text-white py-1 my-3">
-                <p class="fs-4 fw-bold" style="color:black">Freelance Web Development Agency</p>
-                <h1 class="display-5" style="color:rgb(204, 79, 33); text-shadow: 2px 2px 5px rgba(0,0,0,0.5);">
-                    Your Digital Partner
-                </h1>
+                <p class="fs-4 fw-bold" style="color:black">Your Digital Partner</p>
+                <h1 class="display-5" style="font-family: 'Bebas Neue', sans-serif; font-size: 4rem; color:rgb(204, 79, 33); text-shadow: 2px 2px 5px rgba(0,0,0,0.5); letter-spacing: 2px; word-spacing: 5px;">
+                    Release
+                </h1>                
             </div>
-            <div class="row text-uppercase bg-black rounded-4 p-3 mt-5">
+            <div class="row text-uppercase bg-black rounded-4 p-3 mt-2">
                 <div class="col-md-3 col-6 mb-3">
                     <div class="d-flex align-items-center gap-4 flex-column flex-md-row">
                         <h2 class="display-5 counter" data-target="2" style="color:rgb(204, 79, 33); text-shadow: 5px 5px 10px rgba(0,0,0,0.7);">
@@ -201,7 +193,16 @@
             padding-bottom: 1rem;
         }
     }
-</style>
+
+    .glowing-border {
+        position: relative;
+        z-index: 1; /* Ensure it stays above the video */
+        box-shadow:
+            3px 28px 20px rgba(204, 79, 33, 0.8), /* Outward glow */
+            inset 0 -15px rgba(204, 79, 33, 0.6); /* Inner glow at the bottom */
+    }
+</style> 
+
 
 <!-- Count-Up Animation Script -->
 <script>
@@ -297,40 +298,104 @@
  
   <section class="py-5">
     <div class="container" data-aos="zoom-out-up" data-aos-duration="1000">
-        <div class="rounded-4 p-5"
-            style="background-image: url(https://img.freepik.com/free-photo/map-lying-wooden-table_53876-105723.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="h-100 bg-black text-white p-4 rounded-4 shadow-lg" style="opacity: 0.9;">
-                        <h3 class="text-center" data-aos="fade-down" data-aos-duration="800">
-                            Our Services
-                        </h3>
-                        <div class="py-4">
-                            <p class="text-light-emphasis" data-aos="fade-left" data-aos-delay="200">
-                                Web Development
-                            </p>
-                            <h5 data-aos="fade-left" data-aos-delay="300">
-                                Creating stunning and responsive websites
-                            </h5>
-                            <p class="text-light-emphasis" data-aos="fade-left" data-aos-delay="400">
-                                Tailored to your business needs
-                            </p>
+        <div class="rounded-4 p-4 glowing-border" 
+             style="background-image: url(https://img.freepik.com/free-photo/map-lying-wooden-table_53876-105723.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+            <div class="row gy-4">
+                <!-- About Us Section -->
+                <div class="col-md-6 col-sm-12" data-aos="fade-right" data-aos-duration="800">
+                    <div class="bg-black text-white p-3 rounded-4 shadow-lg" style="opacity: 0.9;">
+                        <h3 class="text-center">About Us</h3>
+                        <p class="text-light-emphasis text-center">
+                            We are a dedicated freelance web development agency focused on delivering innovative digital solutions tailored to your business needs. Our team combines creativity and technical expertise to help you establish a strong online presence.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Our Services Section -->
+                <div class="col-md-6 col-sm-12" data-aos="fade-left" data-aos-duration="800">
+                    <div class="bg-black text-white p-3 rounded-4 shadow-lg" style="opacity: 0.9;">
+                        <h4 class="text-center">Our Services</h4>
+                        <div class="py-3">
+                            <p class="text-light-emphasis fw-bold">Web Development</p>
+                            <h5>Creating stunning and responsive websites</h5>
+                            <p class="text-light-emphasis">Tailored to your business needs</p>
                         </div>
-                        <p class="text-light-emphasis" data-aos="fade-right" data-aos-delay="500">
-                            Digital Marketing
-                        </p>
-                        <h5 data-aos="fade-right" data-aos-delay="600">
-                            Boost your online presence
-                        </h5>
-                        <p class="text-light-emphasis" data-aos="fade-right" data-aos-delay="700">
-                            SEO, SEM, and Social Media Marketing
-                        </p>
+                        <div class="py-3">
+                            <p class="text-light-emphasis fw-bold">Digital Marketing</p>
+                            <h5>Boost your online presence</h5>
+                            <p class="text-light-emphasis">SEO, SEM, and Social Media Marketing</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- CSS -->
+    <style>
+        /* Adjust padding for smaller screens */
+        .rounded-4 {
+            padding: 2rem;
+        }
+
+        .bg-black {
+            padding: 1.5rem;
+        }
+
+        /* Typography adjustments for mobile */
+        h3, h4 {
+            font-size: 1.5rem;
+        }
+
+        h5 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .rounded-4 {
+                padding: 1rem;
+            }
+
+            .bg-black {
+                padding: 1rem;
+            }
+
+            h3, h4 {
+                font-size: 1.2rem;
+            }
+
+            h5 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </section>
+
+<!-- Styles -->
+<style>
+    @media (max-width: 768px) {
+        .glowing-border {
+            padding: 20px; /* Adjust padding for smaller screens */
+        }
+    }
+
+    .glowing-border {
+        position: relative;
+        z-index: 1; /* Ensure it stays above the background */
+        box-shadow:
+            0 12px 30px rgba(204, 79, 33, 0.9), /* Outward glow */
+            inset 0 -10px rgba(204, 79, 33, 0.7); /* Inner glow at the bottom */
+    }
+</style>
+
 
 <!-- Link to AOS Library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
@@ -352,8 +417,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6" data-aos="fade-up">
                     <div class="section-header text-center">
-                      <h4 class="fw-bold fs-2 txt-fx slide-up" style="font-family: 'Roboto', sans-serif; font-style: italic; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
-                        Transforming ideas into stunning digital experiences. Welcome to DevAgency.
+                      <h4 class="fw-bold fs-2 txt-fx slide-up" style="font-family: 'Bebas Neue', sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
+                        Transforming ideas into stunning digital experiences.<br/>Welcome to DevAgency.
                     </h4>
                     </div><!--section-header-->
                 </div>
@@ -386,28 +451,28 @@
                 <div class="col mb-4 portfolio-item webdesign">
                   <img src="https://themefisher.com/blog-thumb/free-responsive-website-templates-html5-css3.webp" 
                        class="img-fluid rounded-4 bento-effect image-item" 
-                       alt="Dog 1" data-description="This is a description for Dog 1." />
+                       alt="img 1" data-description="This is a description for Dog 1." />
                 </div>
               
                 <!-- UI/UX -->
                 <div class="col mb-4 portfolio-item uiux">
                   <img src="https://bootstrapmade.com/content/templatefiles/iLanding/iLanding-bootstrap-website-template.webp"
                        class="img-fluid rounded-4 bento-effect image-item" 
-                       alt="Dog 2" data-description="This is a description for Dog 2." />
+                       alt="img 2" data-description="This is a description for Dog 2." />
                 </div>
               
                 <!-- E-commerce -->
                 <div class="col mb-4 portfolio-item ecommerce">
                   <img src="https://uizard.io/static/5d1216d70167670acc1a95dd51673c54/a8e47/d8733a4d375aeb660c14eb37464b551b6ef3059c-1440x835.png"
                        class="img-fluid rounded-4 bento-effect image-item" 
-                       alt="Dog 3" data-description="This is a description for Dog 3." />
+                       alt="img 3" data-description="This is a description for Dog 3." />
                 </div>
               
                 <!-- Branding -->
                 <div class="col mb-4 portfolio-item branding">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPV0S6QPMqXN7rCVsTPsQzKSWcb2mpBU6Z4Q&s"
                        class="img-fluid rounded-4 bento-effect image-item" 
-                       alt="Dog 4" data-description="This is a description for Dog 4." />
+                       alt="img 4" data-description="This is a description for Dog 4." />
                 </div>
               </div>
               
@@ -511,29 +576,34 @@
             <div class="row justify-content-center" id="projects-container">
                 <!-- Card 1 -->
                 <div class="col-md-4 d-flex justify-content-center col-sm-6 mb-4">
-                    <div class="card h-100 text-white p-4 rounded-4" style="background-color: #111111;">
-                        <h4 class="fw-bold">Project 1</h4>
-                        <p class="text-light-emphasis">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card h-100 text-white p-4 " style="background-color: #111111; width: 100%;">
+                        <img src="https://placedog.net/400/300?id=1" alt="Dog 1" class="img-fluid rounded mb-3">
+                        <h4 class="fw-bold">Dog Project 1</h4>
+                        <p class="text-light-emphasis">A beautiful website showcasing various dog breeds.</p>
                         <a href="https://live-demo-link.com" class="link" style="color: #CC4F22; text-decoration: none;">Live Link</a>
                     </div>
                 </div>
                 <!-- Card 2 -->
                 <div class="col-md-4 d-flex justify-content-center col-sm-6 mb-4">
-                    <div class="card h-100 text-white p-4 rounded-4" style="background-color: #111111;">
-                        <h4 class="fw-bold">Project 2</h4>
-                        <p class="text-light-emphasis">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="card h-100 text-white p-4 rounded-4" style="background-color: #111111;width: 100%;">
+                        <img src="https://placedog.net/400/300?id=2" alt="Dog 2" class="img-fluid rounded mb-3">
+                        <h4 class="fw-bold">Dog Project 2</h4>
+                        <p class="text-light-emphasis">An interactive platform for dog training tips and tricks.</p>
                         <a href="https://live-demo-link.com" class="link" style="color: #CC4F22; text-decoration: none;">Live Link</a>
                     </div>
                 </div>
                 <!-- Card 3 -->
                 <div class="col-md-4 d-flex justify-content-center col-sm-6 mb-4">
-                    <div class="card h-100 text-white p-4 rounded-4" style="background-color: #111111;">
-                        <h4 class="fw-bold">Project 3</h4>
-                        <p class="text-light-emphasis">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    <div class="card h-100 text-white p-4 rounded-4" style="background-color: #111111; width: 100%;">
+                        <img src="https://placedog.net/400/300?id=3" alt="Dog 3" class="img-fluid rounded mb-3">
+                        <h4 class="fw-bold">Dog Project 3</h4>
+                        <p class="text-light-emphasis">A community site for dog lovers to share their stories.</p>
                         <a href="https://live-demo-link.com" class="link" style="color: #CC4F22; text-decoration: none;">Live Link</a>
                     </div>
                 </div>
             </div>
+    
+            <!-- View More / See Less Buttons -->
             <div class="text-center mt-4">
                 <button id="view-more" class="btn btn-primary">View More</button>
                 <button id="see-less" class="btn btn-secondary" style="display: none;">See Less</button>
@@ -544,119 +614,139 @@
         <style>
             @media (max-width: 768px) {
                 .card {
-                    width: 100%; /* Ensure the card takes full width */
+                    width: 90%; /* Set the card width to 90% of the screen */
+                    margin: 10px auto; /* Center the card with equal spacing on both sides */
                 }
             }
-    
+            #projects-container {
+                padding-left: 0; /* Remove left padding */
+                padding-right: 0; /* Remove right padding */
+            }
             .card {
                 min-width: 250px; /* Set a minimum width to prevent shrinking */
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better appearance */
             }
+        
+            .btn-primary {
+                background-color: #CC4F22;
+                border: none;
+                padding: 10px 20px;
+                font-size: 1rem;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+            
+            .btn-primary:hover {
+                background-color: #CC4F22;
+            }
+            
+            .btn-secondary {
+                background-color: #CC4F22;
+                border: none;
+                padding: 10px 20px;
+                font-size: 1rem;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+            
+            .btn-secondary:hover {
+                background-color: #111111;
+            }
         </style>
+        
+    
+        <!-- JavaScript -->
+        <script>
+            document.getElementById('view-more').addEventListener('click', function() {
+                const projectsContainer = document.getElementById('projects-container');
+                
+                // Add more projects dynamically
+                for (let i = 4; i <= 6; i++) {
+                    const col = document.createElement('div');
+                    col.className = 'col-md-4 d-flex justify-content-center col-sm-6 mb-4 additional-project';
+                    col.innerHTML = `
+                        <div class="card h-100 text-white p-4 rounded-4" style="background-color: #111111; width: 100%;">
+                            <img src="https://placedog.net/400/300?id=${i}" alt="Dog ${i}" class="img-fluid rounded mb-3">
+                            <h4 class="fw-bold">Dog Project ${i}</h4>
+                            <p class="text-light-emphasis">Description for Dog Project ${i}.</p>
+                            <a href="#" class="link" style="color: #CC4F22; text-decoration: none;">Live Link</a>
+                        </div>
+                    `;
+                    projectsContainer.appendChild(col);
+                }
+                
+                document.getElementById('view-more').style.display = 'none';
+                document.getElementById('see-less').style.display = 'inline-block';
+            });
+    
+            document.getElementById('see-less').addEventListener('click', function() {
+                const additionalProjects = document.querySelectorAll('.additional-project');
+                additionalProjects.forEach(project => project.remove());
+                
+                document.getElementById('view-more').style.display = 'inline-block';
+                document.getElementById('see-less').style.display = 'none';
+            });
+        </script>
     </section>
     
-  
-  <script>
-      document.getElementById('view-more').addEventListener('click', function() {
-          const projectsContainer = document.getElementById('projects-container');
-          for (let i = 4; i <= 6; i++) {
-              const col = document.createElement('div');
-              col.className = 'col-md-4 mb-4 additional-project';
-              col.innerHTML = `
-                  <div class="card h-100  text-white p-4 rounded-4" style="background-color: #111111;">
-                      <h4 class="fw-bold">Project ${i}</h4>
-                      <p class="text-light-emphasis">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-              `;
-              projectsContainer.appendChild(col);
-          }
-          document.getElementById('view-more').style.display = 'none';
-          document.getElementById('see-less').style.display = 'inline-block';
-      });
-  
-      document.getElementById('see-less').addEventListener('click', function() {
-          const additionalProjects = document.querySelectorAll('.additional-project');
-          additionalProjects.forEach(project => project.remove());
-          document.getElementById('view-more').style.display = 'inline-block';
-          document.getElementById('see-less').style.display = 'none';
-      });
-  </script>
-  
-  <style>
-      .card {
-          background-color: #111111;
-      }
-      .btn-primary {
-          background-color: #CC4F22;
-          border: none;
-          padding: 10px 20px;
-          font-size: 1rem;
-          border-radius: 5px;
-          transition: background-color 0.3s;
-      }
-      .btn-primary:hover {
-          background-color: #CC4F22;
-      }
-      .btn-secondary {
-          background-color: #CC4F22;
-          border: none;
-          padding: 10px 20px;
-          font-size: 1rem;
-          border-radius: 5px;
-          transition: background-color 0.3s;
-      }
-      .btn-secondary:hover {
-          background-color: #111111;
-      }
-  </style>
     <section class="py-5">
       <div class=" d-flex justify-content-center fw-bold mb-4" style="font-size: 3rem; color: white;">Pricing</div>
       <div class="container">
-          <div class="row">
+        <div class="row">
+            <!-- Web Design Pricing -->
             <div class="col-md-3 mb-4">
-              <div class="h-100 bg-[#111111] text-white p-4 rounded-4" style="height: 10vh; background: #111111; ">
-                  <h4 class="fw-bold">Web Design</h4>
-                  <p class="text-light-emphasis">Starting at $500</p>
-                  <p>Creating visually appealing and user-friendly websites tailored to your needs.</p>
-                  <button style="background-color: #CC4F22; color: white; border-radius: 50px; padding: 10px 20px; border: none;">
-                    Get
-                </button>
-              </div>
-          </div>
-          <!-- Modern SaaS Pricing -->
-          <div class="col-md-3 mb-4">
-              <div class="h-100 bg-[#111111] text-white p-4 rounded-4" style="height: 10vh; background: #111111;">
-                  <h4 class="fw-bold">Modern SaaS</h4>
-                  <p class="text-light-emphasis">Starting at $1000</p>
-                  <p>Developing scalable and efficient SaaS solutions for modern businesses.</p>
-                  <button style="background-color: #CC4F22; color: white; border-radius: 50px; padding: 10px 20px; border: none;">
-                    Get
-                </button>
-              </div>
-          </div>
-          <!-- Full Stack Pricing -->
-          <div class="col-md-3 mb-4">
-              <div class="h-100 bg-[#111111] text-white p-4 rounded-4" style="height: 10vh; background: #111111; ">
-                  <h4 class="fw-bold">Full Stack</h4>
-                  <p class="text-light-emphasis">Starting at $1500</p>
-                  <p>Comprehensive full stack development services for end-to-end solutions.</p>
-                  <button style="background-color: #CC4F22; color: white; border-radius: 50px; padding: 10px 20px; border: none;">
-                    Get
-                </button>
-              </div>
-          </div>
-          <!-- UI Based Pricing -->
-          <div class="col-md-3 mb-4">
-              <div class="h-100 text-white p-4 rounded-4" style="height: 10vh; background: #111111; ">
-                  <h4 class="fw-bold">UI Based</h4>
-                  <p class="text-light-emphasis">Starting at $800</p>
-                  <p>Focused on creating intuitive and engaging user interfaces for your applications.</p>
-                  <button style="background-color: #CC4F22; color: white; border-radius: 50px; padding: 10px 20px; border: none;">
-                    Get
-                </button>
-              </div>
-          </div>
-          </div>
+                <div class="h-100 text-white p-4 rounded-4" style="height: 10vh; background-color: #111111;">
+                    <h4 class="fw-bold">Web Design</h4>
+                    <p class="text-light-emphasis" style="text-decoration: line-through; color: #ccc;">Starting at ₹4999</p>
+                    <p style="color: #CC4F22; font-size: 1rem;">Now only ₹1999</p>
+                    <p>Creating visually appealing and user-friendly websites tailored to your needs.</p>
+                    <button style="background-color: #CC4F22; color: white; border-radius: 50px; padding: 10px 20px; border: none;">
+                        Get
+                    </button>
+                </div>
+            </div>
+        
+            <!-- Modern SaaS Pricing -->
+            <div class="col-md-3 mb-4">
+                <div class="h-100 text-white p-4 rounded-4" style="height: 10vh; background-color: #111111;">
+                    <h4 class="fw-bold">Modern SaaS</h4>
+                    <p class="text-light-emphasis" style="text-decoration: line-through; color: #ccc;">Starting at ₹14,999</p>
+                    <p style="color: #CC4F22; font-size: 1rem;">Now only ₹8999</p>
+                    <p>Developing scalable and efficient SaaS solutions for modern businesses.</p>
+                    <button style="background-color: #CC4F22; color: white; border-radius: 50px; padding: 10px 20px; border: none;">
+                        Get
+                    </button>
+                </div>
+            </div>
+        
+            <!-- Full Stack Pricing -->
+            <div class="col-md-3 mb-4">
+                <div class="h-100 text-white p-4 rounded-4" style="height: 10vh; background-color: #111111;">
+                    <h4 class="fw-bold">Full Stack</h4>
+                    <p class="text-light-emphasis" style="text-decoration: line-through; color: #ccc;">Starting at ₹20,000</p>
+                    <p style="color: #CC4F22; font-size: 1rem;">Now only ₹15,000</p>
+                    <p>Comprehensive full stack development services for end-to-end solutions.</p>
+                    <button style="background-color: #CC4F22; color: white; border-radius: 50px; padding: 10px 20px; border: none;">
+                        Get
+                    </button>
+                </div>
+            </div>
+        
+            <!-- UI Based Pricing -->
+            <div class="col-md-3 mb-4">
+                <div class="h-100 text-white p-4 rounded-4" style="height: 10vh; background-color: #111111;">
+                    <h4 class="fw-bold">UI Based</h4>
+                    <p class="text-light-emphasis" style="text-decoration: line-through; color: #ccc;">Starting at ₹7999</p>
+                    <p style="color: #CC4F22; font-size: 1rem;">Now only ₹4999</p>
+                    <p>Focused on creating intuitive and engaging user interfaces for your applications.</p>
+                    <button style="background-color: #CC4F22; color: white; border-radius: 50px; padding: 10px 20px; border: none;">
+                        Get
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        
       </div>
   </section>
   <section>
@@ -880,15 +970,17 @@
     <div class="container">
         <div class="row justify-content-center my-5">
             <div class="col-md-5 text-center">
-                <h6>Get in Touch</h6>
-                <h2 class="display-3 text-black">Contact Us</h2>
+                <h6 class="text-black">Get in Touch</h6>
+                <h2 class="display-3 text-black">
+                    Contact <span style="color: #CC4F22;">Us</span>
+                </h2>
                 <p class="text-black">  
                     Have a project in mind? Drop us a message, and let's discuss how we can help bring your ideas to life.
                 </p>
             </div>
             <div class="col-md-5 d-flex justify-content-around flex-wrap align-items-center flex-sm-nowrap">
-                <!-- Circular Cards for Contact Links -->
-                <div class="card rounded-circle text-center mb-3" style="width: 100px; height: 100px; border: none;">
+                <!-- Square Cards for Contact Links -->
+                <div class="card text-center mb-3" style="width: 80px; height: 100px; border: none; margin: 5px;">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
                         <a href="mailto:contact@yourwebsite.com" class="text-decoration-none text-dark">
                             <h5 class="mb-1" style="font-size: 0.9rem;">Email Us</h5>
@@ -896,7 +988,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="card rounded-circle text-center mb-3" style="width: 100px; height: 100px; border: none;">
+                <div class="card text-center mb-3" style="width: 100px; height: 100px; border: none; margin: 5px;">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
                         <a href="tel:+1234567890" class="text-decoration-none text-dark">
                             <h5 class="mb-1" style="font-size: 0.9rem;">Call Us</h5>
@@ -904,7 +996,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="card rounded-circle text-center mb-3" style="width: 100px; height: 100px; border: none;">
+                <div class="card text-center mb-3" style="width: 100px; height: 100px; border: none; margin: 5px;">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
                         <a href="#" class="text-decoration-none text-dark">
                             <h5 class="mb-1" style="font-size: 0.9rem;">Follow Us</h5>
@@ -936,25 +1028,34 @@
                 height: 80px; /* Reduce card size for smaller screens */
             }
             .card-body {
-                padding: 0.5rem; /* Adjust padding for smaller circles */
+                padding: 0.5rem; /* Adjust padding for smaller squares */
             }
         }
 
         .card {
             background-color: #f8f9fa; /* Light background for cards */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow effect */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
             transition: transform 0.3s ease;
         }
 
         .card-body {
-            padding: 1.5rem; /* Add padding to text inside circles */
+            padding: 1.5rem; /* Add padding to text inside squares */
         }
 
         .card:hover {
             transform: scale(1.05); /* Scale effect on hover */
         }
+
+        h6.text-black {
+            color: black; /* Black text for "Get in Touch" */
+        }
+
+        .display-3 span {
+            color: orange; /* Orange color for "Us" */
+        }
     </style>
 </section>
+
 
 
   
@@ -963,9 +1064,11 @@
         <div class="row g-md-5 my-5">
             <div class="col-md-4">
                 <div class="info-box">
-                    <img src="images/logo-2.png" class="img-fluid" alt="Agency Logo">
+                    <h1 class="display-5" style="font-family: 'Bebas Neue', sans-serif; font-size: 4rem; color:rgb(204, 79, 33); text-shadow: 2px 2px 5px rgba(0,0,0,0.5); letter-spacing: 2px; word-spacing: 5px;">
+                        Release
+                    </h1> 
                     <p class="py-4">
-                        At [Your Agency Name], we are dedicated to crafting innovative web solutions that elevate your brand and engage your audience.
+                        At Release, we are dedicated to crafting innovative web solutions that elevate your brand and engage your audience.
                     </p>
                     
                 </div>
