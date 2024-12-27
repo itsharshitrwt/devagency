@@ -2,6 +2,9 @@
 body {
     background-color: black;
     color: white; /* Optional: to ensure text is visible on a black background */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .navbar {
